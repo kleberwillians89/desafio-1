@@ -64,26 +64,6 @@ export default tseslint.config([
       },
 
 
-# Hypesoft Inventory
-
-MVP do desafio Hypesoft. **Sem Docker** (máquina sem espaço); usamos `json-server`.
-
-## Como rodar
-
-```bash
-# 1) API fake
-cd frontend
-npx json-server -p 5088 mock.json
-
-# 2) Frontend
-# em outro terminal:
-cd frontend
-npm i
-npm run dev
-# abre http://localhost:5173
-
-      // other options...
-    },
   },
 ])
 ```
