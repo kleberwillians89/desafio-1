@@ -1,0 +1,22 @@
+# --- Node/Frontend ---
+frontend/node_modules
+frontend/dist
+frontend/.vite
+frontend/.DS_Store
+frontend/.env
+
+# --- .NET/Backend ---
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+
+# --- Infra ---
+infra/.env
+
+# --- IDE/OS/Misc ---
+.vscode/
+.DS_Store
+Thumbs.db
+*.zip
