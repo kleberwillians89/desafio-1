@@ -1,0 +1,31 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0.5
+    command: start-dev
+    environment:
+      KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN:-admin}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:-admin}
+      KC_HTTP_PORT: 8080
+      # Quando integrar o front/api via CORS/OIDC, você pode setar:
+      # KC_HOSTNAME: localhost
+      # KC_PROXY: edge
+    ports:
+      - "8080:8080"
+    volumes:
+      - keycloak_data:/opt/keycloak/data
+    restart: unless-stopped
+
+  mongo-express:
+    image: mongo-express:1.0.2-20-alpine
+    environment:
+      ME_CONFIG_BASICAUTH_USERNAME: ${ME_CONFIG_BASICAUTH_USERNAME:-admin}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${ME_CONFIG_BASICAUTH_PASSWORD:-admin}
+      # Conectando no Atlas (não precisa do container do Mongo local)
+      ME_CONFIG_MONGODB_URL: "${MONGODB_URL}"
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+
+volumes:
+  keycloak_data:

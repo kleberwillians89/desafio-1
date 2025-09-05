@@ -1,0 +1,13 @@
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/bin/Debug/net9.0/Hypesoft.Domain.deps.json
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/bin/Debug/net9.0/Hypesoft.Domain.dll
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/bin/Debug/net9.0/Hypesoft.Domain.pdb
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.csproj.AssemblyReference.cache
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.AssemblyInfoInputs.cache
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.AssemblyInfo.cs
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.csproj.CoreCompileInputs.cache
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.sourcelink.json
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.dll
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/refint/Hypesoft.Domain.dll
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/Hypesoft.Domain.pdb
+/Users/klebs/hypesoft-challenge/src/Hypesoft.Domain/obj/Debug/net9.0/ref/Hypesoft.Domain.dll

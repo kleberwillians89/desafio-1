@@ -1,0 +1,86 @@
+/* ===== base ===== */
+
+@import "tailwindcss";
+
+/* aqui embaixo ficam suas classes personalizadas "hype" */
+
+:root {
+  --bg: #0b1220;
+  --card: #0f172a;
+  --muted: #94a3b8;
+  --text: #e5e7eb;
+  --brand-start: #6366f1;
+  --brand-end: #a855f7;
+  --ring: rgba(255,255,255,0.08);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+/* ===== layout ===== */
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header {
+  position: sticky; top: 0; z-index: 20;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(11,18,32,.85), rgba(11,18,32,.6));
+  border-bottom: 1px solid var(--ring);
+}
+.brand { font-weight: 900; letter-spacing: .3px; font-size: 28px; }
+
+/* nav pills */
+.nav { display:flex; gap:10px; }
+.pill {
+  padding: 8px 14px; border-radius: 12px; font-weight: 600;
+  background: rgba(255,255,255,.03); border: 1px solid var(--ring);
+  color: var(--text); text-decoration: none;
+}
+.pill.active {
+  background: linear-gradient(90deg, var(--brand-start), var(--brand-end));
+  border-color: transparent; color: white;
+}
+
+/* ===== forms ===== */
+.grid { display:grid; gap:12px; }
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.input, .select, .textarea {
+  width: 100%; height: 40px; padding: 0 12px; border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--ring); color: var(--text);
+  outline: none;
+}
+.textarea { height: 40px; }
+.btn-primary {
+  height: 44px; padding: 0 16px; border: 0; border-radius: 12px;
+  font-weight: 700; color: white; cursor: pointer;
+  background: linear-gradient(90deg, var(--brand-start), var(--brand-end));
+  box-shadow: 0 6px 24px rgba(99,102,241,.25);
+}
+.btn-danger {
+  height: 32px; padding: 0 12px; border: 1px solid #ef4444;
+  color:#fecaca; background: rgba(239,68,68,.1); border-radius: 10px; cursor:pointer;
+}
+
+/* ===== table hype ===== */
+.table {
+  width: 100%; border-collapse: collapse; margin-top: 18px;
+  background: var(--card); border-radius: 14px; overflow: hidden;
+  border: 1px solid var(--ring);
+}
+.th, .td { text-align: left; padding: 14px 16px; }
+.thead { background: rgba(255,255,255,.03); }
+.tr + .tr .td { border-top: 1px solid var(--ring); }
+
+/* ===== cards (dashboard) ===== */
+.card {
+  background: var(--card); border:1px solid var(--ring); border-radius: 14px;
+  padding: 16px;
+}
+.stat-title { color: var(--muted); font-size: 14px; }
+.stat-value { font-size: 28px; font-weight: 800; margin-top: 6px; }
+.section-title { font-size: 36px; font-weight: 900; margin: 18px 0; }

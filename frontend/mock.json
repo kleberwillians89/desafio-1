@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Bebidas",
+      "description": "Líquidos"
+    },
+    {
+      "id": "c2",
+      "name": "Alimentos",
+      "description": "Comidas"
+    },
+    {
+      "id": "c3",
+      "name": "Eletrônicos",
+      "description": "Gadgets"
+    },
+    {
+      "id": "c3t3sau",
+      "name": "brinquedo",
+      "description": "infantil"
+    },
+    {
+      "id": "cvfk6qs",
+      "name": "Musica",
+      "description": "discos de vinil"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Refrigerante",
+      "price": 7.5,
+      "stock": 12,
+      "categoryId": "c1"
+    },
+    {
+      "id": "p2",
+      "name": "Suco",
+      "price": 5,
+      "stock": 5,
+      "categoryId": "c1"
+    },
+    {
+      "id": "p3",
+      "name": "Arroz",
+      "price": 28.9,
+      "stock": 30,
+      "categoryId": "c2"
+    },
+    {
+      "id": "45a3",
+      "name": "Bola",
+      "price": 20,
+      "stock": 20,
+      "categoryId": "c3t3sau",
+      "description": ""
+    },
+    {
+      "id": "6de7",
+      "name": "Carne ",
+      "price": 69,
+      "stock": 100,
+      "categoryId": "c2",
+      "description": "carne para churrasco"
+    },
+    {
+      "id": "3ae7",
+      "name": "Liniker",
+      "price": 100,
+      "stock": 100,
+      "categoryId": "cvfk6qs",
+      "description": "album vinil"
+    }
+  ]
+}
